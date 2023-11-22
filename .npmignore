@@ -1,6 +1,6 @@
-*.d.ts
-node_modules
+*.ts
+!*.d.ts
+
 # CDK asset staging directory
-cdk.context.json
 .cdk.staging
 cdk.out
