@@ -52,5 +52,5 @@ npx cdk destroy --profile {your profile}
 
 ## 2. Verification
 
-- Access to `https://${the distribution domain name}`. You can confirm the content stored `./lib/assets/s3/index.html`.
-- Access to `https://${the distribution domain name}/subdir/`. You can confirm the content stored `./lib/assets/s3/subdir/index.html`.
+- Access to `https://${the distribution domain name}`. You can confirm the content stored in `./lib/assets/s3/index.html`.
+- Access to `https://${the distribution domain name}/subdir/`. You can confirm the content stored in `./lib/assets/s3/subdir/index.html`.
