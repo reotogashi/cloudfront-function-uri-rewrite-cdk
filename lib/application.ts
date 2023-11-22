@@ -23,7 +23,7 @@ export class ApplicationStack extends cdk.Stack {
       autoDeleteObjects: true // Delete objects in S3 bucket when deleting S3 bucket since it is necessary to empty the bucket for deletion.
     })
 
-    // Deploy index html and subdirectory/index.html
+    // Deploy index html and subdir/index.html
     new s3Deployment.BucketDeployment(this, 'S3BucketDeployment', {
       sources: [s3Deployment.Source.asset('./lib/assets/s3')],
       destinationBucket: this.s3Bucket
@@ -51,7 +51,7 @@ export class ApplicationStack extends cdk.Stack {
       }
     )
 
-    // CloudFront Distrubution
+    // CloudFront Distribution
     new cf.CloudFrontWebDistribution(
       this,
       'CloudfrontDistribution',
